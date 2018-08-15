@@ -1,4 +1,4 @@
-odoo.define('app_odoo_customize.UserMenu', function (require) {
+odoo.define('odoo11_backend_debrand.UserMenu', function (require) {
     "use strict";
 
     /**
@@ -39,7 +39,7 @@ odoo.define('app_odoo_customize.UserMenu', function (require) {
                     } else {
                         a = '';
                     }
-                    lang_list += '<li><a href="#" data-lang-menu="lang" data-lang-id="' + lang['code'] + '"><img class="flag" src="app_odoo_customize/static/src/img/flags/' + lang['code'] + '.png"/>' + lang['name'] + a + '</a></li>';
+                    lang_list += '<li><a href="#" data-lang-menu="lang" data-lang-id="' + lang['code'] + '"><img class="flag" src="odoo11_backend_debrand/static/src/img/flags/' + lang['code'] + '.png"/>' + lang['name'] + a + '</a></li>';
                 });
                 lang_list += '<li class="divider"></li>';
                 $('switch-lang').replaceWith(lang_list);

@@ -25,7 +25,7 @@ class AppThemeConfigSettings(models.TransientModel):
     app_show_share = fields.Boolean('Show Share Dashboard', help=u"Uncheck to hide the Odoo Share Dashboard")
     app_show_poweredby = fields.Boolean('Show Powered by Odoo', help=u"Uncheck to hide the Powered by text")
     app_stop_subscribe = fields.Boolean('Stop Odoo Subscribe(Performance Improve)', help=u"Check to stop Odoo Subscribe function")
-    group_show_author_in_apps = fields.Boolean(string="Show Author and Website in Apps Dashboard", implied_group='app_odoo_customize.group_show_author_in_apps',
+    group_show_author_in_apps = fields.Boolean(string="Show Author and Website in Apps Dashboard", implied_group='odoo11_backend_debrand.group_show_author_in_apps',
                                                help=u"Uncheck to Hide Author and Website in Apps Dashboard")
 
     app_documentation_url = fields.Char('Documentation Url')
